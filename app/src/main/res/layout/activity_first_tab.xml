@@ -7,80 +7,18 @@
     tools:context="tecsup.com.municipalalerts.fragments.FirstTab">
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="600dp"
-        android:gravity="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="32sp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="1dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="94dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="31dp"
-        android:text="Medcia: 117"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_marginTop="39dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="99dp"
-        android:layout_height="27dp"
-        android:text="Police: 105"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:layout_marginStart="31dp"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Civil Defense: 115"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:layout_marginStart="31dp"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fire Bridage: 116"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:layout_marginStart="31dp"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_marginTop="27dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="395dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="16dp"
-        android:text="Civil Defense emergency number in case of earthquake or other natural disaster in Peru: 119"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Emergency phone"
+        android:text="Emergency number"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="37dp"
-        android:layout_marginLeft="70dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="16dp" />
 
+    <ListView
+        android:id="@+id/emergencylist"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="70dp" />
 </android.support.constraint.ConstraintLayout>
