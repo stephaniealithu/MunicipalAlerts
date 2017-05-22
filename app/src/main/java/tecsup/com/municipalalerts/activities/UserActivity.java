@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import tecsup.com.municipalalerts.R;
 
-import tecsup.com.municipalalerts.adapters.MyTabStatePagerAdapter;
+import tecsup.com.municipalalerts.business.MyTabStatePagerAdapter;
 import tecsup.com.municipalalerts.fragments.FirstTab;
 import tecsup.com.municipalalerts.fragments.SecondTab;
 

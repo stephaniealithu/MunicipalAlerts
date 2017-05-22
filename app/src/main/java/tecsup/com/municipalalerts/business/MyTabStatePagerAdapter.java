@@ -1,4 +1,4 @@
-package tecsup.com.municipalalerts.adapters;
+package tecsup.com.municipalalerts.business;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

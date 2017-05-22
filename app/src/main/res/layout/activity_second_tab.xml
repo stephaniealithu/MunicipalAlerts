@@ -15,4 +15,22 @@
         tools:layout_editor_absoluteX="8dp"
         tools:ignore="HardcodedText,MissingConstraints" />
 
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/callButton"
+        android:inputType="phone"
+        android:hint="Insert phone number"/>
+
+    <ImageButton
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@android:drawable/ic_menu_call"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="call"/>
+
+
 </android.support.constraint.ConstraintLayout>
