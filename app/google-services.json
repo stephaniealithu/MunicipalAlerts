@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "781337380547",
+    "firebase_url": "https://municipalalerts2017.firebaseio.com",
+    "project_id": "municipalalerts2017",
+    "storage_bucket": "municipalalerts2017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781337380547:android:da6c2fe6be25238c",
+        "android_client_info": {
+          "package_name": "tecsup.com.municipalalerts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781337380547-dq5fkr2ec87lgl9e41hpc2emma2qmhp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tecsup.com.municipalalerts",
+            "certificate_hash": "123d31b4d9a2014db3392a138645d0960bf25e8e"
+          }
+        },
+        {
+          "client_id": "781337380547-2j4rhp1hqmukmf2e0t918vqip4dlbbj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYERYpeEkcCWpKIhhO-0O9EAjgM6t6-Xg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781337380547-2j4rhp1hqmukmf2e0t918vqip4dlbbj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
