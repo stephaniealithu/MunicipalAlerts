@@ -42,8 +42,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng Police = new LatLng(-12.051362,-76.9968908);
+        mMap.addMarker(new MarkerOptions().position(Police).title("Marker of Police Station").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Police));
+
+        LatLng Hospital = new LatLng(-12.0475008,-76.9473745);
+        mMap.addMarker(new MarkerOptions().position(Hospital).title("Marker of Hospital").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Hospital));
+
+        LatLng FireDepartment = new LatLng(-12.0473936,-76.9736392);
+        mMap.addMarker(new MarkerOptions().position(FireDepartment).title("Marker of FireDepartment ").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(FireDepartment));
+
+        LatLng Tecsup = new LatLng(-12.0441629,-76.9550872);
+        mMap.addMarker(new MarkerOptions().position(Tecsup).title("Marker of Tecsup").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Tecsup));
     }
 }
