@@ -1,4 +1,4 @@
-package tecsup.com.municipalalerts;
+package tecsup.com.municipalalerts.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,10 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import tecsup.com.municipalalerts.activities.UserActivity;
+import tecsup.com.municipalalerts.R;
 import tecsup.com.municipalalerts.business.UserBL;
 import tecsup.com.municipalalerts.models.User;
 
@@ -22,6 +26,10 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText email;
     private EditText password1;
     private EditText password2;
+    private Switch switchButton;
+    private TextView swicthText;
+    private String switchOn = "English";
+    private String switchOff="Español";
     private Button register_button;
 
     @Override
@@ -34,6 +42,28 @@ public class RegisterActivity extends AppCompatActivity {
         password1=(EditText) findViewById(R.id.password1);
         password2=(EditText) findViewById(R.id.password2);
         register_button=(Button) findViewById(R.id.register_button);
+
+        switchButton = (Switch) findViewById(R.id.switchButton);
+        swicthText = (TextView) findViewById(R.id.switchText);
+        switchButton.setChecked(true);
+
+        switchButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean bChecked) {
+                if (bChecked) {
+                    swicthText.setText(switchOn);
+                } else {
+                    swicthText.setText(switchOff);
+                }
+            }
+        });
+
+        if (switchButton.isChecked()) {
+            swicthText.setText(switchOn);
+        } else {
+            swicthText.setText(switchOff);
+        }
+
 
         sharedPreferences=this.getSharedPreferences("MySharedPreferences", Context.MODE_PRIVATE);
 
@@ -77,5 +107,22 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void androidCheckBoxClicked(View view) {
+// action for checkbox click
+        switch (view.getId()) {
+            case R.id.checkBox1:
+                CheckBox checkBox = (CheckBox) view;
+                if (checkBox.isChecked())
+                    Toast.makeText(this, checkBox.getText() + " selected!", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.checkBox2:
+                //DO something when user check the box
+                break;
+            case R.id.checkBox3:
+                //DO something when user check the box
+                break;
+        }
     }
 }

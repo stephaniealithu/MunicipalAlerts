@@ -24,17 +24,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-
             android:name=".activities.SplashActivity"
-            android:theme="@style/SplashTheme" />
+            android:theme="@style/SplashTheme">
+
+        </activity>
         <activity android:name=".activities.UserActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN">
+                <action android:name="android.intent.action.MAIN"></action>
 
-                </action>
-                <category android:name="android.intent.category.LAUNCHER"></category>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <!--
@@ -55,11 +54,12 @@
         <activity
             android:name=".activities.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".activities.RegisterActivity" />
         <activity
             android:name=".ConfigActivity"
             android:label="@string/title_activity_config"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SubmitNewActivity"></activity>
     </application>
 
 </manifest>

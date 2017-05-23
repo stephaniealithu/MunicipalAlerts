@@ -1,7 +1,10 @@
 package tecsup.com.municipalalerts.fragments;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,10 +18,13 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import tecsup.com.municipalalerts.R;
+import tecsup.com.municipalalerts.SubmitNewActivity;
 
 
 public class FirstTab extends Fragment {
-    private ListView contactsList;
+    private ListView newsList;
+    private FloatingActionButton addNew;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -32,6 +38,20 @@ public class FirstTab extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        addNew = (FloatingActionButton)view.findViewById(R.id.addNew);
+
+
+        addNew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),SubmitNewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
 
 

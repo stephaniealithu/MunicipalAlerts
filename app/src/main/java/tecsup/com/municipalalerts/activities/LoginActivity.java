@@ -30,7 +30,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 import tecsup.com.municipalalerts.R;
-import tecsup.com.municipalalerts.RegisterActivity;
 import tecsup.com.municipalalerts.business.UserBL;
 import tecsup.com.municipalalerts.models.User;
 
