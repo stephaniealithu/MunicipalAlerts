@@ -42,20 +42,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng Police = new LatLng(-12.051362,-76.9968908);
-        mMap.addMarker(new MarkerOptions().position(Police).title("Marker of Police Station").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(Police));
+        LatLng PoliceStation = new LatLng(-12.0464372,-76.9725975);
+        mMap.addMarker(new MarkerOptions().position(PoliceStation).title("Marker of Police Station").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)).snippet("Bolognesi 282, Santa Anita 15008"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(PoliceStation));
 
         LatLng Hospital = new LatLng(-12.0475008,-76.9473745);
-        mMap.addMarker(new MarkerOptions().position(Hospital).title("Marker of Hospital").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+        mMap.addMarker(new MarkerOptions().position(Hospital).title("Marker of Hospital").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)).snippet("Carr. Central, Distrito de Lima 15011"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Hospital));
 
-        LatLng FireDepartment = new LatLng(-12.0473936,-76.9736392);
-        mMap.addMarker(new MarkerOptions().position(FireDepartment).title("Marker of FireDepartment ").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+        LatLng FireDepartment = new LatLng(-12.0495149,-77.0079198);
+        mMap.addMarker(new MarkerOptions().position(FireDepartment).title("Marker of FireDepartment ").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)).snippet("Cotrina 203, El Agustino 15006"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(FireDepartment));
 
         LatLng Tecsup = new LatLng(-12.0441629,-76.9550872);
-        mMap.addMarker(new MarkerOptions().position(Tecsup).title("Marker of Tecsup").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+        mMap.addMarker(new MarkerOptions().position(Tecsup).title("Marker of Tecsup").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)).snippet("Santa Anita, Avenida Cascanueces 2221, Lima 15011"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Tecsup));
+
     }
+
 }
