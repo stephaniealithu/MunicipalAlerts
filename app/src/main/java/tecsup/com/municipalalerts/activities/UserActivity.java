@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import tecsup.com.municipalalerts.ConfigActivity;
 import tecsup.com.municipalalerts.R;
 
 import tecsup.com.municipalalerts.business.MyTabStatePagerAdapter;

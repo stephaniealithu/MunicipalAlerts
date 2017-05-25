@@ -22,7 +22,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
 
             <TextView
                 android:id="@+id/num1"
@@ -60,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -69,7 +70,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
 
             <TextView
                 android:id="@+id/num2"
@@ -107,7 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -116,7 +118,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
 
             <TextView
                 android:id="@+id/num3"
@@ -145,6 +148,100 @@
                 android:background="@android:drawable/ic_menu_call"
                 android:scaleType="matrix"
                 app:layout_constraintLeft_toRightOf="@+id/phone3"
+                tools:layout_editor_absoluteY="16dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <TextView
+                android:id="@+id/num4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone4"
+                android:text="110"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/phone4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defensa Civil"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageButton
+                android:id="@+id/callButton4"
+                android:layout_width="57dp"
+                android:layout_height="46dp"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/ic_menu_call"
+                android:scaleType="matrix"
+                app:layout_constraintLeft_toRightOf="@+id/phone4"
+                tools:layout_editor_absoluteY="16dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <TextView
+                android:id="@+id/num5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone5"
+                android:text="115"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/phone5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ambulancia"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageButton
+                android:id="@+id/callButton5"
+                android:layout_width="57dp"
+                android:layout_height="46dp"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/ic_menu_call"
+                android:scaleType="matrix"
+                app:layout_constraintLeft_toRightOf="@+id/phone5"
                 tools:layout_editor_absoluteY="16dp" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
